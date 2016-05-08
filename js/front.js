@@ -11,9 +11,6 @@ $(function () {
     sliding();
     contactForm();
     map();
-    counters();
-    parallax();
-    demo();
 });
 
 $(window).load(function () {
@@ -37,38 +34,6 @@ $(window).resize(function () {
     }
 
 });
-
-
-/* =========================================
- *  for demo purpose only - can be deleted 
- *  =======================================*/
-
-function demo() {
-
-    if ($.cookie("theme_csspath")) {
-	$('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
-    }
-
-    $("#colour").change(function () {
-
-	if ($(this).val !== '') {
-
-	    var colour = $(this).val();
-	    var introImage = $('body').find('#intro .item');
-
-	    introImage.removeClass();
-	    introImage.addClass('item');
-	    introImage.addClass(colour);
-
-
-	    var theme_csspath = 'css/style.' + $(this).val() + '.css';
-	    $('link#theme-stylesheet').attr("href", theme_csspath);
-	    $.cookie("theme_csspath", theme_csspath, {expires: 365, path: '/'});
-	}
-
-	return false;
-    });
-}
 
 /* =========================================
  *  animations
@@ -145,29 +110,6 @@ function sliders() {
 	});
     }
 
-}
-
-/* =========================================
- * counters 
- *  =======================================*/
-
-function counters() {
-
-    $('.counter').counterUp({
-	delay: 10,
-	time: 1000
-    });
-
-}
-
-/* =========================================
- * parallax 
- *  =======================================*/
-
-function parallax() {
-
-    $('.text-parallax').parallax("50%", 0.1);
-    
 }
 
 /* =========================================
@@ -349,8 +291,8 @@ function map() {
     var styles = [{"featureType": "landscape", "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]}, {"featureType": "poi", "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]}, {"featureType": "road.highway", "stylers": [{"saturation": -100}, {"visibility": "simplified"}]}, {"featureType": "road.arterial", "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]}, {"featureType": "road.local", "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]}, {"featureType": "transit", "stylers": [{"saturation": -100}, {"visibility": "simplified"}]}, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {"featureType": "water", "elementType": "labels", "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]}, {"featureType": "water", "elementType": "geometry", "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]}];
     map = new GMaps({
 	el: '#map',
-	lat: -12.043333,
-	lng: -77.028333,
+	lat: 53.3974927,
+	lng: -2.633766,
 	zoomControl: true,
 	zoomControlOpt: {
 	    style: 'SMALL',
@@ -368,8 +310,8 @@ function map() {
     var image = 'img/marker.png';
 
     map.addMarker({
-	lat: -12.043333,
-	lng: -77.028333,
+	lat: 53.3974927,
+	lng: -2.633766,
 	icon: image/* ,
 	 title: '',
 	 infoWindow: {
