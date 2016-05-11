@@ -103,7 +103,7 @@ function sliders() {
 	    itemsMobile: [480, 1]
 	});
 	$(".testimonials").owlCarousel({
-	    items: 4,
+	    items: 3,
 	    itemsDesktopSmall: [1170, 3],
 	    itemsTablet: [970, 2],
 	    itemsMobile: [750, 1]
