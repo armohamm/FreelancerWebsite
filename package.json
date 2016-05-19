@@ -9,7 +9,6 @@
     "bootstrap":"^3.3.6",
     "jquery":"2.2.3",
     "jquery.scrollto": "^2.1.2",
-    "jquery.cookie": "^1.4.1",
     "gmaps": "^0.4.24",
     "masonry-layout": "^4.1.0",
     "modernizr": "^3.3.1",
@@ -18,12 +17,16 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-concat": "^2.6.0",
+    "gulp-flatten": "^0.2.0",
     "gulp-htmlmin": "^2.0.0",
     "gulp-imagemin": "^3.0.0",
+    "gulp-inject": "^4.0.0",
     "gulp-load-plugins": "^1.2.0",
     "gulp-modernizr": "^1.0.0-alpha",
-    "gulp-uglify": "^1.5.3"
+    "gulp-strip-comments": "^2.4.3"
   },
   "repository": {
     "type": "git",

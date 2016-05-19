@@ -1,7 +1,3 @@
-if ($.cookie("theme_csspath")) {
-    $('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
-}
-
 $(function () {
 
     animations();
