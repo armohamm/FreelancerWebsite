@@ -6,8 +6,8 @@
     "start": "http-server -o"
   },
   "dependencies": {
-    "bootstrap":"^3.3.6",
-    "jquery":"2.2.3",
+    "bootstrap": "^3.3.6",
+    "jquery": "2.2.3",
     "jquery.scrollto": "^2.1.2",
     "gmaps": "^0.4.24",
     "masonry-layout": "^4.1.0",
@@ -26,7 +26,8 @@
     "gulp-inject": "^4.0.0",
     "gulp-load-plugins": "^1.2.0",
     "gulp-modernizr": "^1.0.0-alpha",
-    "gulp-strip-comments": "^2.4.3"
+    "gulp-strip-comments": "^2.4.3",
+    "imagemin-pngquant": "^5.0.0"
   },
   "repository": {
     "type": "git",
