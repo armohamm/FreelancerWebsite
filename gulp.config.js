@@ -9,6 +9,7 @@ module.exports = function() {
             "./img/**/*.png"
         ],
         libJs: [
+            "js/modernizr.js",
             "node_modules/jquery/dist/jquery.min.js",
             "node_modules/bootstrap/dist/js/bootstrap.min.js",
             "node_modules/gmaps/gmaps.min.js",

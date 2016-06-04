@@ -38,6 +38,8 @@ gulp.task("app", ["app-images"], function () {
 gulp.task("modernizr", ["app"], function() {
   gulp.src("js/front.js", { base: "./"})
     .pipe($.modernizr())
+    .pipe($.uglify())
+    .pipe($.rev())
     .pipe(gulp.dest("./js"))
     .pipe(gulp.dest(config.dist + "/js"));
 });
@@ -46,11 +48,14 @@ gulp.task("inject", ["modernizr"], function () {
     var es = require("event-stream");
 
     var js = gulp.src(config.libJs)
+        .pipe($.uglify())
+        .pipe($.rev())
         .pipe(gulp.dest(config.dist + "/js"));
 
     var css = gulp.src(config.libCss)
         .pipe($.cleanCss({ compatibility: "ie8" }))
         .pipe($.concat("lib.min.css"))
+        .pipe($.rev())
         .pipe(gulp.dest(config.dist));
 
     return gulp.src("./index.html")
