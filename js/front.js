@@ -187,10 +187,16 @@ $('.reference-item').click(function (e) {
 	}
     }
     else {
-	slider = '';
+		slider = '';
     }
 
+	var videos = element.find('.reference-description').data('videos').split(',');
 
+	if (videos.length > 0){
+		for(var j = 0; j < videos.length; j++) {
+			slider = slider + '<div class="item-video"><a class="owl-video" href="' + videos[j] + '"></a></div>'
+		}
+	}
 
     $('#detail-title').text(title);
     $('#detail-content').html(description);
@@ -218,7 +224,10 @@ function openReference() {
 		autoPlay: true,
 		stopOnHover: true,
 		singleItem: true,
-		afterInit: ''
+		afterInit: '',
+        video:true,		
+		videoHeight: 300, 
+		videoWidth: 600
 	    });
 	}
     }, 300);
