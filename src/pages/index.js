@@ -46,7 +46,7 @@ const IndexPage = () => (
         </p>
       </div>
     </div>
-    <div className="container mb-5">
+    <div className="container" style={{ marginBottom: '400px' }}>
       <h2 id="about">About</h2>
       <p>
         I am Jon Preece, an experienced full stack website and software developer from
@@ -83,6 +83,27 @@ const IndexPage = () => (
         <img src={webpack} alt="Webpack" style={{ margin: '20px' }} />
       </div>
       <h2 id="speaking-and-training">Speaking &amp; Training</h2>
+      <p>
+        I have had the absolute pleasure to speak at several meetups around Warrington and
+        Manchester.
+      </p>
+      <p>Would you like me to speak at your event? </p>
+      <p>
+        I do not charge a fee for public speaking, but I may ask you to cover travel
+        expenses. Please get in touch with me to discuss further.
+      </p>
+      <h2 id="blog-and-tutorials">Blog and tutorials</h2>
+      <p>
+        I regularly contribute to
+        {' '}
+        <a href="https://developerhandbook.com">DeveloperHandbook.com</a>
+        {' '}
+and
+        {' '}
+        <a href="https://youdontknowaws.com">YouDontKnowAWS.com</a>
+.
+      </p>
+      <p>I plan to launch a YouTube channel at some point in the future, stay tuned!</p>
       <h2 id="work">Work</h2>
       <p>I have had the pleasure to work at some of the UK's biggest companies.</p>
       <div style={{ textAlign: 'center' }}>
@@ -139,6 +160,16 @@ const IndexPage = () => (
         Are you a small company, startup, or just have a team that works remotely? Do not
         worry, I am fully set up to work from my personal office, complete with landline
         phone and video conferencing facilities.
+      </p>
+      <h2 id="contact">Contact</h2>
+      <p>
+        You can reach out to me via Twitter
+        {' '}
+        <a href="https://twitter.com/jpreecedev">@jpreecedev</a>
+        {' '}
+or you can connect with
+        me on
+        <a href="https://www.linkedin.com/in/jonpreecedev/">LinkedIn</a>
       </p>
     </div>
   </Layout>
