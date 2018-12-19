@@ -1,30 +1,29 @@
 import * as React from 'react'
 import classnames from 'classnames'
 
-import { Link } from 'gatsby'
 import icon from '../images/favicon.png'
 import FollowOnTwitter from './followOnTwitter'
 
 const links = [
   {
     description: 'About',
-    to: '/about'
-  },
-  {
-    description: 'Work',
-    to: '/work'
+    to: 'about'
   },
   {
     description: 'Speaking & Training',
-    to: '/speaking-and-training'
+    to: 'speaking-and-training'
   },
   {
     description: 'Blog & Tutorials',
-    to: '/blog-and-tutorials'
+    to: 'blog-and-tutorials'
+  },
+  {
+    description: 'Work',
+    to: 'work'
   },
   {
     description: 'Contact',
-    to: '/contact'
+    to: 'contact'
   }
 ]
 
@@ -39,9 +38,9 @@ const Sidebar = ({ author, twitterHandle, siteTitle, description, className }) =
       <ul className="list-group mt-5">
         {links.map(link => (
           <li key={link.description} className="list-group-item">
-            <Link className="list-group-item-action" to={link.to}>
+            <a className="list-group-item-action" href={`#${link.to}`}>
               {link.description.toUpperCase()}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

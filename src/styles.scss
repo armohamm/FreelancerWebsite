@@ -116,3 +116,10 @@ blockquote {
     border-bottom: 0;
   }
 }
+
+.list-group-item-action {
+  &:hover {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+}

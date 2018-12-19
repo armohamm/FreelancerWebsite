@@ -33,7 +33,9 @@ const Layout = ({ children }) => (
               description={siteMetadata.description}
               twitterHandle={siteMetadata.twitterHandle}
             />
-            <div className="col-md-8 col-xl-9">{children}</div>
+            <div className="col-md-8 col-xl-9" style={{ overflowY: 'scroll' }}>
+              {children}
+            </div>
           </div>
         </div>
       )
