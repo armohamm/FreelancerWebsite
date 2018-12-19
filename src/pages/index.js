@@ -46,7 +46,7 @@ const IndexPage = () => (
         </p>
       </div>
     </div>
-    <div className="container" style={{ marginBottom: '400px' }}>
+    <div className="container custom-gutter">
       <h2 id="about">About</h2>
       <p>
         I am Jon Preece, an experienced full stack website and software developer from
