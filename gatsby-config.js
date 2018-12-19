@@ -31,6 +31,12 @@ module.exports = {
         icon: 'src/images/favicon.png'
       }
     },
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-42743116-4'
+      }
+    }
   ]
 }
