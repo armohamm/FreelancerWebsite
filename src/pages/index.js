@@ -32,6 +32,7 @@ const IndexPage = () => (
     <div
       className="jumbotron"
       style={{
+        borderRadius: 0,
         color: '#fff',
         backgroundColor: '#111957',
         backgroundImage: `url(${image})`,
