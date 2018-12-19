@@ -38,6 +38,7 @@ const IndexPage = () => (
           alt="Jon Preece"
         />
         <h2 style={textStyle}>I am a developer, speaker, writer, and teacher.</h2>
+        <br />
         <p style={textStyle}>
           Hire me to build you a website, teach you to code or speak at your event.
         </p>
