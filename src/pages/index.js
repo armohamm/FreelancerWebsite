@@ -29,18 +29,14 @@ const textStyle = { padding: '20px', display: 'inline-block', backgroundColor: '
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
-    <div
-      className="jumbotron"
-      style={{
-        borderRadius: 0,
-        color: '#fff',
-        backgroundColor: '#111957',
-        backgroundImage: `url(${image})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPositionX: '-250px'
-      }}
-    >
-      <div className="offset-3 mt-5 mb-5">
+    <div className="jumbotron">
+      <div className="offset-md-3 mt-md-5 mb-md-5">
+        <img
+          style={{ width: '100%' }}
+          className="d-block d-md-none rounded"
+          src={image}
+          alt="Jon Preece"
+        />
         <h2 style={textStyle}>I am a developer, speaker, writer, and teacher.</h2>
         <p style={textStyle}>
           Hire me to build you a website, teach you to code or speak at your event.
@@ -136,7 +132,12 @@ and
         <img
           src={moneysavingexpert}
           alt="MoneySavingExpert"
-          style={{ height: '35px', margin: '20px' }}
+          style={{
+            height: 'auto',
+            maxHeight: '35px',
+            maxWidth: '299px',
+            margin: '20px'
+          }}
         />
         <img src={booking} alt="Booking.com" style={{ height: '35px', margin: '20px' }} />
       </div>

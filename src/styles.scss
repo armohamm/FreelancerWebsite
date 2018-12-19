@@ -128,3 +128,15 @@ blockquote {
   margin-bottom: 400px;
   padding: 0 24px;
 }
+
+.jumbotron {
+  color: #fff;
+  background-color: #111957;
+  background-repeat: no-repeat;
+  background-position-x: -250px;
+  border-radius: 0;
+
+  @include media-breakpoint-up(md) {
+    background-image: url('./images/jonpreece.png');
+  }
+}

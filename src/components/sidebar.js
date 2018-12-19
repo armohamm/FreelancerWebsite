@@ -35,7 +35,7 @@ const Sidebar = ({ author, twitterHandle, siteTitle, description, className }) =
         {author.toUpperCase()}
       </h1>
       <p>{description}</p>
-      <ul className="list-group mt-5">
+      <ul className="list-group mt-5 d-none d-md-block">
         {links.map(link => (
           <li key={link.description} className="list-group-item">
             <a className="list-group-item-action" href={`#${link.to}`}>
