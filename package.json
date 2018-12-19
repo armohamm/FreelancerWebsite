@@ -1,6 +1,6 @@
 {
   "name": "jpreecedev",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Official source code for JPreeceDev.com, freelancer and solutions provider",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "bump": "bump --prompt",
     "build": "rimraf .cache public && gatsby build",
     "deploy": "npm run bump -- --prompt --tag --push --all && npm run build && s3-deploy './public/**' --cwd './public/' --bucket jpreecedev.com  --deleteRemoved --gzip && npm run clear",
-    "clear": "aws-cloudfront-invalidate E30EVLSKZ74XDW"
+    "clear": "aws-cloudfront-invalidate E1JZ71D11DU5CQ"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
