@@ -28,7 +28,19 @@ const textStyle = { padding: '20px', display: 'inline-block', backgroundColor: '
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
+    <SEO
+      title="Home"
+      keywords={[
+        'jon',
+        'preece',
+        'jpreecedev',
+        'freelancer',
+        'react',
+        'javascript',
+        'contractor',
+        'frontend'
+      ]}
+    />
     <div className="jumbotron">
       <div className="offset-md-3 mt-md-5 mb-md-5">
         <img
