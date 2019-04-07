@@ -1,6 +1,6 @@
 {
   "name": "jpreecedev",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Official source code for JPreeceDev.com, freelancer and solutions provider",
   "repository": {
     "type": "git",
@@ -17,9 +17,8 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "bump": "bump --prompt",
     "build": "rimraf .cache public && gatsby build",
-    "deploy": "npm run bump -- --prompt --tag --push --all && npm run build && s3-deploy './public/**' --cwd './public/' --bucket jpreecedev.com  --deleteRemoved --gzip && npm run clear",
+    "deploy": "bump --tag --push --all && npm run build && s3-deploy './public/**' --cwd './public/' --bucket jpreecedev.com  --deleteRemoved --gzip && npm run clear",
     "clear": "aws-cloudfront-invalidate E1JZ71D11DU5CQ"
   },
   "dependencies": {
