@@ -24,7 +24,10 @@ function Html({
       <body {...bodyAttributes}>
         {preBodyComponents}
         <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+          rel="stylesheet"
+        />
         {postBodyComponents}
       </body>
     </html>
