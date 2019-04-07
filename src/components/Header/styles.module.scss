@@ -1,0 +1,41 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.text {
+  display: inline-block;
+  padding: 20px;
+  color: #fff;
+  font-size: 1.25rem;
+  background-color: rgb(63, 81, 181);
+  border-radius: 2px;
+}
+
+.container {
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.banner {
+  background-color: #111957;
+}
+
+.large {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.small {
+  font-size: 1rem;
+}

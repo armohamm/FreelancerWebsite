@@ -7,137 +7,36 @@ $grid-gutter-width: 0;
 @import '~bootstrap/scss/type';
 @import '~bootstrap/scss/images';
 @import '~bootstrap/scss/grid';
-@import '~bootstrap/scss/tables';
-@import '~bootstrap/scss/forms';
-@import '~bootstrap/scss/buttons';
-@import '~bootstrap/scss/transitions';
-@import '~bootstrap/scss/dropdown';
-@import '~bootstrap/scss/button-group';
-@import '~bootstrap/scss/input-group';
-@import '~bootstrap/scss/nav';
-@import '~bootstrap/scss/navbar';
-@import '~bootstrap/scss/card';
-@import '~bootstrap/scss/jumbotron';
-@import '~bootstrap/scss/media';
-@import '~bootstrap/scss/list-group';
-@import '~bootstrap/scss/pagination';
 @import '~bootstrap/scss/utilities';
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 3.5rem;
+:root {
+  font-size: 16px;
 }
 
-pre[class*='language-'] {
-  &::before,
-  &::after {
-    display: none;
-  }
-}
-
-code {
-  font-size: 0.875rem;
-}
-
-.nav-shadow {
-  box-shadow: 0px 0px 1px #aaa;
-}
-
-.jumbotron h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 300;
-}
-
-main {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    a {
-      color: inherit;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-blockquote {
-  padding: 8px 16px;
-  background-color: #fafafa;
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .main-container {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    max-width: 1720px;
-
-    > .row {
-      height: 100%;
-    }
-  }
-}
-
-.sidebar {
-  padding: 20px;
-  color: #fff;
-  background-color: #557a95;
-  border-top: 5px solid #455a64;
-}
-
-.list-group-item {
-  color: #fff;
-  background-color: transparent;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  a {
-    display: block;
-    color: #fff;
-    font-size: 1.5rem;
-  }
-
-  &:last-child {
-    border-bottom: 0;
-  }
-}
-
-.list-group-item-action {
-  &:hover {
-    color: #fff;
-    background-color: #3f51b5;
-  }
-}
-
-.custom-gutter {
-  margin-bottom: 400px;
-  padding: 0 24px;
-}
-
-.jumbotron {
+.site-header {
   color: #fff;
   background-color: #111957;
-  background-repeat: no-repeat;
-  background-position-x: -250px;
-  border-radius: 0;
+}
 
-  @include media-breakpoint-up(md) {
-    background-image: url('./images/jonpreece.png');
+.text-header {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+.sub-title {
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.2;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 2rem;
   }
 }

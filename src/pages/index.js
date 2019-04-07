@@ -2,7 +2,6 @@ import * as React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import image from '../images/jonpreece.png'
 
 import clearSky from '../images/clearsky.png'
 import destinology from '../images/destinology.png'
@@ -24,8 +23,6 @@ import react from '../images/react.png'
 import sass from '../images/sass.png'
 import webpack from '../images/webpack.png'
 
-const textStyle = { padding: '20px', display: 'inline-block', backgroundColor: '#3F51B5' }
-
 const IndexPage = () => (
   <Layout>
     <SEO
@@ -41,23 +38,8 @@ const IndexPage = () => (
         'frontend'
       ]}
     />
-    <div className="jumbotron">
-      <div className="offset-md-3 mt-md-5 mb-md-5">
-        <img
-          style={{ width: '100%' }}
-          className="d-block d-md-none rounded"
-          src={image}
-          alt="Jon Preece"
-        />
-        <h2 style={textStyle}>I am a developer, speaker, writer, and teacher.</h2>
-        <br />
-        <p style={textStyle}>
-          Hire me to build you a website, teach you to code or speak at your event.
-        </p>
-      </div>
-    </div>
-    <div className="container custom-gutter">
-      <h2 id="about">About</h2>
+    <div className="container mb-5 p-3">
+      <p className="sub-title">About</p>
       <p>
         I am Jon Preece, an experienced full stack website and software developer from
         Warrington (UK) currently working in and around Manchester (UK).
@@ -72,49 +54,7 @@ const IndexPage = () => (
         I love to teach, I love to train and share my knowledge with others, I love to
         speak at public events.
       </p>
-      <h3>Skills</h3>
-      <p>
-        I work hard and train hard when I can to keep up to date with technology as best I
-        can.
-      </p>
-      <p>Some of by primary skills include;</p>
-      <div style={{ textAlign: 'center' }}>
-        <img src={csharp} alt="C#" style={{ margin: '20px' }} />
-        <img
-          src={aws}
-          alt="AWS Amazon Web Services"
-          style={{ height: '65px', margin: '20px' }}
-        />
-        <img src={javascript} alt="JavaScript" style={{ margin: '20px' }} />
-        <img src={nodejs} alt="NodeJS" style={{ height: '65px', margin: '20px' }} />
-        <br />
-        <img src={react} alt="React" style={{ margin: '20px' }} />
-        <img src={sass} alt="SASS" style={{ margin: '20px' }} />
-        <img src={webpack} alt="Webpack" style={{ margin: '20px' }} />
-      </div>
-      <h2 id="speaking-and-training">Speaking &amp; Training</h2>
-      <p>
-        I have had the absolute pleasure to speak at several meetups around Warrington and
-        Manchester.
-      </p>
-      <p>Would you like me to speak at your event? </p>
-      <p>
-        I do not charge a fee for public speaking, but I may ask you to cover travel
-        expenses. Please get in touch with me to discuss further.
-      </p>
-      <h2 id="blog-and-tutorials">Blog and tutorials</h2>
-      <p>
-        I regularly contribute to
-        {' '}
-        <a href="https://developerhandbook.com">DeveloperHandbook.com</a>
-        {' '}
-and
-        {' '}
-        <a href="https://youdontknowaws.com">YouDontKnowAWS.com</a>
-.
-      </p>
-      <p>I plan to launch a YouTube channel at some point in the future, stay tuned!</p>
-      <h2 id="work">Work</h2>
+      <p className="sub-title">Work</p>
       <p>I have had the pleasure to work at some of the UK's biggest companies.</p>
       <div style={{ textAlign: 'center' }}>
         <img
@@ -154,7 +94,52 @@ and
         />
         <img src={booking} alt="Booking.com" style={{ height: '35px', margin: '20px' }} />
       </div>
-      <h3>Consulting &amp; Contracting</h3>
+      <p className="sub-title">Skills</p>
+      <p>I work hard and train hard to keep up to date with technology as best I can.</p>
+      <p>My favourite technologies include;</p>
+      <div style={{ textAlign: 'center' }}>
+        <img src={csharp} alt="C#" style={{ margin: '20px' }} />
+        <img
+          src={aws}
+          alt="AWS Amazon Web Services"
+          style={{ height: '65px', margin: '20px' }}
+        />
+        <img src={javascript} alt="JavaScript" style={{ margin: '20px' }} />
+        <img src={nodejs} alt="NodeJS" style={{ height: '65px', margin: '20px' }} />
+        <br />
+        <img src={react} alt="React" style={{ margin: '20px' }} />
+        <img src={sass} alt="SASS" style={{ margin: '20px' }} />
+        <img src={webpack} alt="Webpack" style={{ margin: '20px' }} />
+      </div>
+      <p className="sub-title">Speaking &amp; Training</p>
+      <p>
+        I have had the absolute pleasure to speak at several meetups around Warrington and
+        Manchester.
+      </p>
+      <p>Would you like me to speak at your event? </p>
+      <p>
+        I do not charge a fee for public speaking, but I may ask you to cover travel
+        expenses. Please get in touch with me to discuss further.
+      </p>
+      <p className="sub-title">Blog &amp; Tutorials</p>
+      <p>
+        I regularly contribute to
+        {' '}
+        <a href="https://developerhandbook.com">DeveloperHandbook.com</a>
+, my personal
+        blog that has over 15k hits per month.
+      </p>
+      <p>
+        I am very active on
+        {' '}
+        <a href="https://github.com/jpreecedev" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        .
+      </p>
+      <p>I plan to launch a YouTube channel at some point in the future, stay tuned!</p>
+
+      <p className="sub-title">Consulting &amp; Contracting</p>
       <p>
         I can provide you and/or your team with expert advice you can trust. Using my
         wealth of industry experience I can advise on software &amp; website architecture,
@@ -162,7 +147,7 @@ and
         self employed contractor I can come and work on site for your business for 3, 6,
         or up to 12 months (full time) on a daily basis.
       </p>
-      <h3>Website &amp; Software Coding</h3>
+      <p className="sub-title">Website &amp; Software Coding</p>
       <p>
         I have been writing code for over 10 years professionally and a massive 15 years
         in total. I have expert knowledge of NodeJS, C#, ASP .NET MVC, WebForms, SQL
@@ -170,13 +155,13 @@ and
         Whilst I do not know it all (who does!), I have learnt how to learn, and I can get
         up to speed quickly.
       </p>
-      <h3>Remote Work</h3>
+      <p className="sub-title">Remote Work</p>
       <p>
         Are you a small company, startup, or just have a team that works remotely? Do not
         worry, I am fully set up to work from my personal office, complete with landline
         phone and video conferencing facilities.
       </p>
-      <h2 id="contact">Contact</h2>
+      <p className="sub-title">Contact</p>
       <p>
         You can reach out to me via Twitter
         {' '}
@@ -184,7 +169,8 @@ and
         {' '}
 or you can connect with
         me on
-        <a href="https://www.linkedin.com/in/jonpreecedev/">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jonpreecedev/"> LinkedIn</a>
+.
       </p>
     </div>
   </Layout>
